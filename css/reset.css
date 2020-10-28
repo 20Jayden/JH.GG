@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	font-family: 'Noto Sans Korean', "애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo", "나눔바른고딕", NanumBarunGothic, "돋움", dotum, AppleGothic, sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 

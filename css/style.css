@@ -122,7 +122,7 @@ nav.activated .nav-container .content a:hover{
   =============== 섹션 높이 =====================================
                   구간입니다.                                         */
 section {
-    height: 1200px;
+    height: 100%;
 }
 
 /* 
@@ -130,14 +130,18 @@ section {
                         구간입니다.                                         */
 
 .hover-tab{
+    width:100%;
     margin-top:50px;
+    border-width: 0px;
+    border-color: #333333;
+    float:left;
 }
 /* Style the tab */
 .tab {
     float: left;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-    width: 30%;
+    width: 29.6%;
     height: 360px;
     margin: 0;
     padding: 0;
@@ -164,7 +168,7 @@ section {
 .tabcontent {
     float: left;
     border: 1px solid #ccc;
-    width: 69%;
+    width: 70%;
     height: 360px;
     display: none;
   }
@@ -174,17 +178,87 @@ section {
   =============== 호버 탭 아래 -> 메인 게시판 =====================================
                         구간입니다.                                         */
 
-
-.board {
-    display:flex;
+                
+.board{
     width:100%;
-}                        
-.baord-width{
-    width:50%;
 }
-table.board-table{
-    border: 1px solid #f1f1f1;
+.board-content{
+    width: 49%;
+    margin:20px 0 0;
+    height: 274px;
+    display:flex;
+    flex-wrap: wrap;
+    border: 1px solid #e8eaeb;
+    border-bottom: none;
+}
+.board-content .board-title{
+    width:100%;
+    height:48px;
+    display:flex;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+    border-bottom: 1px solid #e8eaeb;
+}
+
+.board-content .board-title a{
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid #5383E8;
+    margin:10px;
+    padding:5px;
+    font-size: 0.75rem;
 }
 
 
+.board-content .post{
+    width: 100%;
+    height:calc(100% - 48px);
+}
+.board-content .post ul{
+    width:100%;
+    height: 100%;
+    display:flex;
+    flex-flow: wrap;
+}
 
+.board-content .post ul li{
+    width:100%;
+    display:flex;
+    align-items:center;
+    border-bottom: 1px solid #e8eaeb;
+}
+
+.board-content .post ul li a{
+    width:100%;
+    height: 44px;
+    display:flex;
+    align-items:center;
+    text-decoration: none;
+    color: #000000;
+}
+.board-content .post ul li a:hover{
+    background-color: rgba(249, 249, 250, 0.5);
+}
+
+.fix{
+    margin:10px;
+}
+.fix > span{
+    
+}
+
+
+/*====메인 게시판 위치 조절 float=====*/                        
+.f-right{
+    float:right;
+}
+.f-left{
+    float:left;
+}
+/*====메인 게시판 위치 조절 float=====*/
+
+/*=== 공지사항 글자색(특별케이스) ===*/
+.notice{
+    color: #f8354f;
+}
